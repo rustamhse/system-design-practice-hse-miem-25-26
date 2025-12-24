@@ -29,7 +29,7 @@
 ### Storm
 
 ```bash
-user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script-storm.js
+user@X16QY3GWR6-MBP demo-app-1 % k6 run --out experimental-prometheus-rw k6/scripts/load-script-storm.js
 
          /\      Grafana   /‾‾/  
     /\  /  \     |\  __   /  /   
@@ -98,7 +98,7 @@ default ✓ [======================================] 0000/1000 VUs  10s
 ### Wave
 
 ```bash
-user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script.js
+user@X16QY3GWR6-MBP demo-app-1 % k6 run --out experimental-prometheus-rw k6/scripts/load-script.js
 
          /\      Grafana   /‾‾/  
     /\  /  \     |\  __   /  /   
