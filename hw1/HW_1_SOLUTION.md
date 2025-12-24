@@ -28,6 +28,7 @@
 
 ### Storm
 
+```bash
 user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script-storm.js
 
          /\      Grafana   /‾‾/  
@@ -73,10 +74,9 @@ user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script-storm.js
     data_sent......................: 3.5 MB 318 kB/s
 
 
-
-
 running (11.1s), 0000/1000 VUs, 20239 complete and 0 interrupted iterations
 default ✓ [======================================] 0000/1000 VUs  10s
+```
 
 Данный сценарий НТ приводит к тому, что система перестаёт стабильно обслуживать входящий трафик. 
 Резко возрастает нагрузка на CPU (CPU Busy ≈ 100%) и load average (≈600% при 10 CPU), что указывает на формирование очереди процессов и нехватку вычислительных ресурсов на бэке
@@ -97,6 +97,7 @@ default ✓ [======================================] 0000/1000 VUs  10s
 
 ### Wave
 
+```bash
 user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script.js
 
          /\      Grafana   /‾‾/  
@@ -146,7 +147,7 @@ user@X16QY3GWR6-MBP demo-app-1 % k6 run k6/scripts/load-script.js
 
 running (4m00.0s), 0000/1000 VUs, 238682 complete and 0 interrupted iterations
 default ✓ [======================================] 0000/1000 VUs  4m0s
-
+```
 
 В данном система демонстрирует существенно более стабильное поведение по сравнению с штормовым сценарием
 
