@@ -18,6 +18,8 @@ user@X16QY3GWR6-MBP patroni-master %
 По выводу видно, что в кластере три ноды:
 patroni1 — лидер, а patroni2 и patroni3 — реплики
 
+P.S Далее я перезапускал ноды и patroni3 стал лидером
+
 ## Запуск скрипта
 
 ```bash
